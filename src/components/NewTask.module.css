@@ -1,0 +1,38 @@
+.newtaskForm {
+    width: 100%;
+    margin-top: -3rem;
+    padding-top: -1rem;
+    border-top: 1px var(--gray-600);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newtaskForm textarea {
+    background: var(--gray-600);
+    border: 0;
+    resize: none;
+    height: 3.375rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    width: 46rem;
+}
+
+textarea::placeholder {
+    color: var(--gray-400);
+}
+
+.newtaskForm button[type=submit] {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--blue-500);
+    color: var(--white);
+    font-weight: bold;
+    border: 0;
+}
