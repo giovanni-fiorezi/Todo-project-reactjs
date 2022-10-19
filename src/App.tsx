@@ -1,24 +1,34 @@
 import { useState } from 'react'
 import { Header } from './components/Header'
 import { NewTask } from './components/NewTask'
-import { Tasks } from './components/Tasks'
+import { SpaceTask } from './components/SpaceTask'
 import './global.css'
 
 import styles from './App.module.css'
 
-export function App() {
-  // const [count, setCount] = useState(0);
+const tasks = [
+  {
+    id: 1,
+    content: 'Desenvolver projeto e praticar'
+  },
+  {
+    id: 2,
+    content: 'Aprimorar conhecimento'
+  }
 
+]
+
+export function App() {
   return (
 
     <div>
       <Header />
         <div className={styles.wrapper}>
           <NewTask />
+              <main>
+                  <SpaceTask />
+            </main>
         </div>
-        <div>
-          <Tasks />
-        </div>
-    </div>
+      </div>
   )
 }

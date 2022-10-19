@@ -9,12 +9,14 @@
     --gray-800: #202024;
     --gray-900: #121214;  
 
+    --blue-400: #4EA8DE;
     --blue-500: #3b82f6;
     --blue-600: #2563eb;
     --blue-700: #1d4ed8;
     --blue-800: #1e40af;
-    --blue-900: #1e3a8a
+    --blue-900: #1e3a8a;
 
+    --purple-300: #8284FA;
 }
 
 * {
@@ -31,6 +33,6 @@ body {
 
 body, input, textarea, button {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1rem;
 }

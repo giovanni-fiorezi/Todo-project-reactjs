@@ -1,8 +1,8 @@
-import styles from './Tasks.module.css';
+import styles from './SpaceTask.module.css';
 
 import notepad from '../assets/Clipboard.svg';
 
-export function Tasks() {
+export function SpaceTask() {
     return (
         <article className={styles.container}>
             <header>
@@ -10,18 +10,18 @@ export function Tasks() {
                     <p className={styles.create}>Tarefas criadas 0</p>
                     <p className={styles.done}>Concluidas 0</p>
                 </div>
-                
             </header>
             <footer className={styles.footer}>
-                <div className={styles.image}>
+                {/* <div> */}
                     <img 
                         src={notepad} 
+                        height={56}
+                        width={56}
                         alt="Imagem da agenda"
-                        />
-                </div>
-                        <strong>Você ainda não tem tarefas cadastradas</strong>
-                        <span>Crie tarefas e organize seus itens a fazer</span>
-                
+                    />
+                    <strong>Você ainda não tem tarefas cadastradas</strong>
+                    <span>Crie tarefas e organize seus itens a fazer</span>
+                {/* </div> */}
             </footer>
         </article>   
     )

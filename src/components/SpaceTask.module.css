@@ -1,10 +1,8 @@
 .container {
-    width: 46rem;
-    height: 17.9375rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 3.75rem auto;
 }
 
 .header {
@@ -16,18 +14,34 @@
     padding-bottom: 1.5rem;
 }
 
+.create {
+    color: var(--blue-400);
+    font-weight: bold;
+    gap: 8px;
+
+}
+
+.done {
+    color: var(--purple-300);
+    font-weight: bold;
+    gap: 8px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 10.6875rem;
+    margin-top: 3.6875rem;
     color: var(--gray-400);
     font-style: normal;
-    line-height: 1.6rem;
-    text-decoration: none;
 }
 
-.image {
-    padding-top: 107px;
+.footer strong {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.footer span {
+    font-size: 1rem;
+    line-height: 1.6;
 }
