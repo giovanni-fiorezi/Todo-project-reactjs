@@ -28,12 +28,23 @@ textarea::placeholder {
 }
 
 .button {
-    background: var(--blue-500);
+    background: var(--blue-600);
     color: var(--white);
     cursor: pointer;
     border-radius: 0.5rem;
     border: 0;
     padding: 1rem;
-    width: 90px;
+    width: 5.625rem;
     height: 3.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: color 0.2s, background-color 0.2s;
+    
+}
+
+.button:hover {
+    background: var(--blue-500);
 }

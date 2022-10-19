@@ -1,0 +1,7 @@
+.wrapper {
+    grid-template-columns: 736px 1fr;
+    padding: 0 1rem;
+    /* height: 287px; */
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+}

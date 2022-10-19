@@ -1,5 +1,5 @@
 import styles from './NewTask.module.css';
-// import { Plus } from 'phosphor-react'
+import { PlusCircle } from 'phosphor-react'
 
 export function NewTask() {
     return (
@@ -12,8 +12,8 @@ export function NewTask() {
             <div>
                 <button className={styles.button} 
                     type="submit">
-                    {/* <Plus size={32} weight="thin" /> */}
-                    Criar +
+                        <PlusCircle size={16} weight="regular" />
+                    Criar
                 </button>
             </div>
             

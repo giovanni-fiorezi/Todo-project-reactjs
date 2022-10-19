@@ -4,6 +4,8 @@ import { NewTask } from './components/NewTask'
 import { Tasks } from './components/Tasks'
 import './global.css'
 
+import styles from './App.module.css'
+
 export function App() {
   // const [count, setCount] = useState(0);
 
@@ -11,7 +13,7 @@ export function App() {
 
     <div>
       <Header />
-        <div>
+        <div className={styles.wrapper}>
           <NewTask />
         </div>
         <div>

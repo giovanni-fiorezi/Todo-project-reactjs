@@ -1,16 +1,27 @@
 import styles from './Tasks.module.css';
 
+import notepad from '../assets/Clipboard.svg';
+
 export function Tasks() {
     return (
-        <article className={styles.tasks}>
+        <article className={styles.container}>
             <header>
-                <div className={styles.taskCreate}></div>
-                <div className={styles.taskDone}></div>
+                <div className={styles.header}>
+                    <p className={styles.create}>Tarefas criadas 0</p>
+                    <p className={styles.done}>Concluidas 0</p>
+                </div>
+                
             </header>
-            <footer>
-                <img className={styles.image} src=""/>
-                Você ainda não tem tarefas cadastradas
-                Crie tarefas e organize seus itens a fazer
+            <footer className={styles.footer}>
+                <div className={styles.image}>
+                    <img 
+                        src={notepad} 
+                        alt="Imagem da agenda"
+                        />
+                </div>
+                        <strong>Você ainda não tem tarefas cadastradas</strong>
+                        <span>Crie tarefas e organize seus itens a fazer</span>
+                
             </footer>
         </article>   
     )
